@@ -42,29 +42,43 @@
                                     <action selector="stopPlayingAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PrJ-ro-Chm"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="record" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5O-tT-7wO">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="170" y="374" width="59" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eLh-C3-37a" firstAttribute="top" secondItem="vdu-PN-gDI" secondAttribute="bottom" constant="8" id="1wg-va-FPe"/>
                             <constraint firstAttribute="centerX" secondItem="vdu-PN-gDI" secondAttribute="centerX" id="5BW-No-bAc"/>
                             <constraint firstAttribute="centerY" secondItem="vdu-PN-gDI" secondAttribute="centerY" id="EEv-2Q-JtE"/>
+                            <constraint firstAttribute="centerY" secondItem="Y5O-tT-7wO" secondAttribute="centerY" constant="-84.5" id="FaI-55-akw"/>
                             <constraint firstAttribute="centerX" secondItem="eLh-C3-37a" secondAttribute="centerX" id="QBI-Pj-A9k"/>
                             <constraint firstAttribute="centerY" secondItem="4Rl-Y0-lT4" secondAttribute="centerY" constant="-270" id="VWi-de-ngV"/>
                             <constraint firstAttribute="centerX" secondItem="4Rl-Y0-lT4" secondAttribute="centerX" constant="-2" id="YYH-Ss-yLr"/>
+                            <constraint firstAttribute="centerX" secondItem="Y5O-tT-7wO" secondAttribute="centerX" constant="0.5" id="yoa-Lw-s6p"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="vdu-PN-gDI"/>
                                 <exclude reference="eLh-C3-37a"/>
                                 <exclude reference="4Rl-Y0-lT4"/>
+                                <exclude reference="Y5O-tT-7wO"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="1wg-va-FPe"/>
-                                <exclude reference="QBI-Pj-A9k"/>
-                                <exclude reference="VWi-de-ngV"/>
-                                <exclude reference="YYH-Ss-yLr"/>
                                 <exclude reference="5BW-No-bAc"/>
                                 <exclude reference="EEv-2Q-JtE"/>
+                                <exclude reference="1wg-va-FPe"/>
+                                <exclude reference="QBI-Pj-A9k"/>
+                                <exclude reference="FaI-55-akw"/>
+                                <exclude reference="yoa-Lw-s6p"/>
+                                <exclude reference="VWi-de-ngV"/>
+                                <exclude reference="YYH-Ss-yLr"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -72,20 +86,24 @@
                                 <include reference="vdu-PN-gDI"/>
                                 <include reference="eLh-C3-37a"/>
                                 <include reference="4Rl-Y0-lT4"/>
+                                <include reference="Y5O-tT-7wO"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="1wg-va-FPe"/>
-                                <include reference="QBI-Pj-A9k"/>
-                                <include reference="VWi-de-ngV"/>
-                                <include reference="YYH-Ss-yLr"/>
                                 <include reference="5BW-No-bAc"/>
                                 <include reference="EEv-2Q-JtE"/>
+                                <include reference="1wg-va-FPe"/>
+                                <include reference="QBI-Pj-A9k"/>
+                                <include reference="FaI-55-akw"/>
+                                <include reference="yoa-Lw-s6p"/>
+                                <include reference="VWi-de-ngV"/>
+                                <include reference="YYH-Ss-yLr"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Record" id="eHc-8n-j3J"/>
                     <connections>
                         <outlet property="recordButton" destination="vdu-PN-gDI" id="qaD-P3-0cd"/>
+                        <outlet property="recordLabel" destination="Y5O-tT-7wO" id="iei-Cd-Jfq"/>
                         <outlet property="recordingInProgress" destination="eLh-C3-37a" id="Cif-Gk-Tu3"/>
                         <outlet property="stopButton" destination="4Rl-Y0-lT4" id="hde-Z5-jfg"/>
                         <segue destination="eBF-5X-S0W" kind="show" identifier="stopRecording" id="fba-we-hIS"/>
@@ -176,17 +194,17 @@
                                 <exclude reference="hdC-oK-ixm"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="E1h-B6-3VV"/>
-                                <exclude reference="bmM-q5-eAZ"/>
-                                <exclude reference="XDH-ba-63I"/>
-                                <exclude reference="tSW-ta-uZe"/>
-                                <exclude reference="9G1-xu-Uc3"/>
-                                <exclude reference="u96-bg-gqy"/>
+                                <exclude reference="9R3-Ia-Xcr"/>
+                                <exclude reference="S5j-JW-v4Q"/>
                                 <exclude reference="AN2-Lc-Fef"/>
                                 <exclude reference="Vrr-ey-ZpH"/>
                                 <exclude reference="r6d-Bt-Iy5"/>
-                                <exclude reference="S5j-JW-v4Q"/>
-                                <exclude reference="9R3-Ia-Xcr"/>
+                                <exclude reference="E1h-B6-3VV"/>
+                                <exclude reference="bmM-q5-eAZ"/>
+                                <exclude reference="9G1-xu-Uc3"/>
+                                <exclude reference="u96-bg-gqy"/>
+                                <exclude reference="XDH-ba-63I"/>
+                                <exclude reference="tSW-ta-uZe"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -198,17 +216,17 @@
                                 <include reference="hdC-oK-ixm"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="E1h-B6-3VV"/>
-                                <include reference="bmM-q5-eAZ"/>
-                                <include reference="XDH-ba-63I"/>
-                                <include reference="tSW-ta-uZe"/>
-                                <include reference="9G1-xu-Uc3"/>
-                                <include reference="u96-bg-gqy"/>
+                                <include reference="9R3-Ia-Xcr"/>
+                                <include reference="S5j-JW-v4Q"/>
                                 <include reference="AN2-Lc-Fef"/>
                                 <include reference="Vrr-ey-ZpH"/>
                                 <include reference="r6d-Bt-Iy5"/>
-                                <include reference="S5j-JW-v4Q"/>
-                                <include reference="9R3-Ia-Xcr"/>
+                                <include reference="E1h-B6-3VV"/>
+                                <include reference="bmM-q5-eAZ"/>
+                                <include reference="9G1-xu-Uc3"/>
+                                <include reference="u96-bg-gqy"/>
+                                <include reference="XDH-ba-63I"/>
+                                <include reference="tSW-ta-uZe"/>
                             </mask>
                         </variation>
                     </view>

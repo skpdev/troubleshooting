@@ -14,6 +14,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var recordingInProgress: UILabel!
     @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var recordLabel: UILabel!
     
     var audioRecorder:AVAudioRecorder!
     var recordedAudio:RecordedAudio!
@@ -38,7 +39,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
     @IBAction func recordAudio(sender: UIButton) {
         stopButton.hidden = false
-        recordingInProgress.hidden = true
+        recordingInProgress.hidden = false
         recordButton.enabled = false
         //TODO: Record the user's voice
         //Place the files in the users documents directory
@@ -58,6 +59,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.meteringEnabled = true
         audioRecorder.prepareToRecord()
         audioRecorder.record()
+        recordingInProgress.hidden = false
+        recordLabel.hidden = true
         }
     
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder!, successfully flag: Bool) {
@@ -86,6 +89,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBAction func stopPlayingAudio(sender: UIButton) {
         //TODO: Stop recording the user's voice
         audioRecorder.stop()
+        recordingInProgress.hidden = true
         var audioSession = AVAudioSession.sharedInstance()
         audioSession.setActive(false, error: nil)
         
