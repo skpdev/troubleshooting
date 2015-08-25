@@ -45,11 +45,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="record" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5O-tT-7wO">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="170" y="374" width="59" height="21"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -71,14 +68,14 @@
                                 <exclude reference="Y5O-tT-7wO"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="5BW-No-bAc"/>
-                                <exclude reference="EEv-2Q-JtE"/>
-                                <exclude reference="1wg-va-FPe"/>
-                                <exclude reference="QBI-Pj-A9k"/>
                                 <exclude reference="FaI-55-akw"/>
                                 <exclude reference="yoa-Lw-s6p"/>
+                                <exclude reference="1wg-va-FPe"/>
+                                <exclude reference="QBI-Pj-A9k"/>
                                 <exclude reference="VWi-de-ngV"/>
                                 <exclude reference="YYH-Ss-yLr"/>
+                                <exclude reference="5BW-No-bAc"/>
+                                <exclude reference="EEv-2Q-JtE"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -89,14 +86,14 @@
                                 <include reference="Y5O-tT-7wO"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="5BW-No-bAc"/>
-                                <include reference="EEv-2Q-JtE"/>
-                                <include reference="1wg-va-FPe"/>
-                                <include reference="QBI-Pj-A9k"/>
                                 <include reference="FaI-55-akw"/>
                                 <include reference="yoa-Lw-s6p"/>
+                                <include reference="1wg-va-FPe"/>
+                                <include reference="QBI-Pj-A9k"/>
                                 <include reference="VWi-de-ngV"/>
                                 <include reference="YYH-Ss-yLr"/>
+                                <include reference="5BW-No-bAc"/>
+                                <include reference="EEv-2Q-JtE"/>
                             </mask>
                         </variation>
                     </view>
